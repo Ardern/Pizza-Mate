@@ -11300,3 +11300,20 @@ a.active,a:hover{
   background: #33FF39;
   transition: .5s;
 }
+/* CSS FOR ORDER SEC */
+
+#order {
+  padding-left: 400px;
+  width: 100%;
+  background-color: #b3ffff;
+}
+.footer {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    height: 200px;
+    max-width: none;
+    background-color: honeydew;
+    color: black;
+}
