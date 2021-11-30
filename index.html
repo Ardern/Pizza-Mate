@@ -25,10 +25,86 @@
                 <h1>Christmas is Here!</h1>
             </div>
             <div class="main-content">
-                <p>Enjoy this Christmas with crazy offers when you visit our outlets with your mates! Awesome</p>
+                <p>Enjoy this Christmas with crazy offers when you visit our outlets with your mates!</p>
       
         </section>
-    <p> hhshshshshshhshshsh</p>
+        <section class="order-sec">
+            <div class="order-gif">
+            <img src="https://media2.giphy.com/media/3o7TKMYewttqjcp21y/200w.webp?cid=ecf05e4771mdhqfvmiledz76vcmvws44o1sgctgra4r8qjui&rid=200w.webp&ct=g" alt="">
+            </div>
+        </section>
+        <div id="order">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <form id="orderpizza">
+                        <div class="heading">
+                            <h2>Place Your Order</h2>
+                        </div>
+                        <div id="p-order">
+                            
+                            <select class="size form-select" aria-label="Default select example" required>
+                                <option selected>Specify Size</option>
+                                <option value="Small"> Lite (Small)</option>
+                                <option value="Large"> Standard (Medium)</option>
+                                <option value="Medium"> Premium (Large)</option>
+                            </select>
+                            
+                            <div class="topping mt-3">
+                                <h4>Specify Toppings</h4>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox"
+                                        value="potato">
+                                    <label class="form-check-label" for="checkbox">Potato</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox"
+                                        value="mushroom">
+                                    <label class="form-check-label" for="checkbox">Mushroom</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox"
+                                        value="meat">
+                                    <label class="form-check-label" for="checkbox">Meat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox"
+                                        value="veggies">
+                                    <label class="form-check-label" for="checkbox">Veggies</label>
+                                </div>
+                                
+          
+                            <select class="crust  form-select mt-3" aria-label="Default select example" required>
+                                <option selected>Specify Crust</option>
+                                <option value="Crispy">Crispy</option>
+                                <option value="Stuffed">Stuffed</option>
+                                <option value="Gluten-Free">Gluten-Free</option>
+                            </select>
+                            
+                            <input type="number" class="form-control mt-3" id="pizzaNumber"
+                                placeholder="Number of pizzas" min="1" required />
+                        </div>
+                        <!-- Address -->
+                        <div id="address">
+                            <div class="row mt-3">
+                                <h4>Where can we deliver your Pizza?</h4>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Estate</label>
+                                        <input type="text" class="form-control" id="county" placeholder="Kasarani">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Street</label>
+                                        <input type="text" class="form-control" id="city" placeholder="Hunters">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <button type="submit" id="checkoutBtn" class="btn btn-success mt-3">Request Pizza</button>
+                    </form>
+                </div>
+
     
 </body>
 </html>
