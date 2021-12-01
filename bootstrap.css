@@ -11302,23 +11302,7 @@ a.active,a:hover{
 }
 /* CSS FOR ORDER SEC */
 
-#order {
-  padding-left: 400px;
-  width: 100%;
-  background-color: #b3ffff;
-  padding-bottom: 25px;
-}
-.main-header {
-  width: fit-content;
-  height: 150px;
-  border-radius: 25%;
-}
-.main-header h1 {
-  padding-top: 120px;
-  padding-left: 40px;
-  color: #33FF39;
-  font-weight: bold;
-}
+
 .main-header p {
   color: #33FF39;
   padding-left: 40px;
