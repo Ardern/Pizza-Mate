@@ -11306,6 +11306,7 @@ a.active,a:hover{
   padding-left: 400px;
   width: 100%;
   background-color: #b3ffff;
+  padding-bottom: 25px;
 }
 .main-header {
   width: fit-content;
@@ -11326,6 +11327,7 @@ a.active,a:hover{
 #checkoutBtn {
   background-color: #33FF39;
   color: #000;
+  
 }
 
 
