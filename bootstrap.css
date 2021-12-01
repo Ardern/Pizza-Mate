@@ -11272,7 +11272,7 @@ nav{
   width: 100%;
 }
 label.logo{
-  color: #33FF39;
+  color: #a5aaa6;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
@@ -11323,6 +11323,14 @@ a.active,a:hover{
   padding-left: 40px;
   font-weight: bolder;
 }
+#checkoutBtn {
+  background-color: #33FF39;
+  color: #000;
+}
+
+
+
+
 .footer {
   display: flex;
     flex-direction: row;
