@@ -11307,6 +11307,22 @@ a.active,a:hover{
   width: 100%;
   background-color: #b3ffff;
 }
+.main-header {
+  width: fit-content;
+  height: 150px;
+  border-radius: 25%;
+}
+.main-header h1 {
+  padding-top: 120px;
+  padding-left: 40px;
+  color: #b3ffff;
+  font-weight: bold;
+}
+.main-header p {
+  color: #b3ffff;
+  padding-left: 40px;
+  font-weight: bolder;
+}
 .footer {
   display: flex;
     flex-direction: row;
