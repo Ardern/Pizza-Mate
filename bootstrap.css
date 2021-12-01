@@ -11329,10 +11329,6 @@ a.active,a:hover{
   color: #000;
   
 }
-
-
-
-
 .footer {
   display: flex;
     flex-direction: row;
@@ -11340,6 +11336,6 @@ a.active,a:hover{
     padding: 20px;
     height: 200px;
     max-width: none;
-    background-color: honeydew;
+    background-color: #808080;
     color: black;
 }
