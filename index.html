@@ -1,126 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <title>Pizza Mate- We Are All About Pizza</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <nav>
         <label class="logo">Pizza Mate</label>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="#">Our Company</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Order Online</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Order Online</a></li>
         </ul>
     </nav>
-      <div class="container">
-    <section class="main" style="background-image: url('./assets/banner.jpeg'); height: 500px;">
+    <div class="container">
+        <section class="main" style="background-image: url('./assets/banner.jpeg'); height: 500px;">
             <div class="main-header">
                 <h1>Christmas is Here!</h1>
                 <p>Enjoy this Christmas with crazy offers when <br/>you visit our outlets with your mates!</p>
             </div>
             <div class="main-content">
-               
+
             </div>
-    </section>
-    
-    <section id="order">
-                    <div class="col-md-6">
-                        <form id="orderpizza">
-                            <div class="heading">
-                                <h2>Place Your Order</h2>
-                            </div>
-                            <div id="p-order">
-                                
-                                <select class="size form-select" aria-label="Default select example" required>
+        </section>
+
+        <section id="order">
+            <div class="col-md-6">
+                <form id="orderpizza">
+                    <div class="heading">
+                        <h2>Place Your Order</h2>
+                    </div>
+                    <div id="p-order">
+                        <select class="size form-select" aria-label="Default select example" id="type">
                                     <option selected>Specify Size</option>
-                                    <option value="Small"> Lite (Small)</option>
-                                    <option value="Large"> Standard (Medium)</option>
-                                    <option value="Medium"> Premium (Large)</option>
-                                </select>
-                                
-                                <div class="topping mt-3">
-                                    <h4>Specify Toppings</h4>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="checkbox"
-                                            value="potato">
-                                        <label class="form-check-label" for="checkbox">Potato</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="checkbox"
-                                            value="mushroom">
-                                        <label class="form-check-label" for="checkbox">Mushroom</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="checkbox"
-                                            value="meat">
-                                        <label class="form-check-label" for="checkbox">Meat</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="checkbox"
-                                            value="veggies">
-                                        <label class="form-check-label" for="checkbox">Veggies</label>
-                                    </div>
-                                    
-              
-                                <select class="crust  form-select mt-3" aria-label="Default select example" required>
-                                    <option selected>Specify Crust</option>
-                                    <option value="Crispy">Crispy</option>
-                                    <option value="Stuffed">Stuffed</option>
-                                    <option value="Gluten-Free">Gluten-Free</option>
-                                </select>
-                                
-                                <input type="number" class="form-control mt-3" id="numberPizza"
-                                    placeholder="Number of pizzas" min="1" required />
-                            </div>
-                            <!-- Address -->
-                            <div id="address">
-                                <div class="row mt-3">
-                                    <h4>Where can we deliver your Pizza?</h4>
-                                    <div class="col-md-4">
-                                        <div class="mb-3">
-                                            <label for="location" class="form-label">Estate</label>
-                                            <input type="text" class="form-control" id="county" placeholder="Kasarani">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="mb-3">
-                                            <label for="location" class="form-label">Street</label>
-                                            <input type="text" class="form-control" id="city" placeholder="Hunters">
-                                        </div>
+                                    <option value="120"> Lite (Small)</option>
+                                    <option value="200"> Standard (Medium)</option>
+                                    <option value="350"> Premium (Large)</option>
+                            </select>
+                        <div class="topping mt-3">
+                            <select class="crust  form-select mt-3" aria-label="Default select example" id="toppins">
+                                <option selected>Specify Toppings</option>
+                                <option value="60">Veges</option>
+                                <option value="90">Meat</option>
+                                <option value="85">Mushroom</option>
+                                <option value="75">Potato</option>
+                            </select>
+                            <select class="crust  form-select mt-3" aria-label="Default select example" id="crust">
+                                <option selected>Specify Crust</option>
+                                <option value="70">Crispy</option>
+                                <option value="90">Stuffed</option>
+                                <option value="110">Gluten-Free</option>
+                            </select>
+
+                            <input type="number" class="form-control mt-3" id="numberPizza" placeholder="Number of pizzas" min="1" />
+                        </div>
+                        <!-- Address -->
+                        <div id="address">
+                            <div class="row mt-3">
+                                <h4>Where can we deliver your Pizza?</h4>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Enter Contact</label>
+                                        <input type="text" class="number form-control" id="estate" placeholder="07...">
                                     </div>
                                 </div>
-                            </div> 
-                            <button type="submit" id="checkoutBtn" class="btn btn-success mt-3">Request Pizza</button>
-                        </form>
-                    </div>
-                    
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Street</label>
+                                        <input type="text" class="form-control" id="city" placeholder="Hunters">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label"></label>
+                                        <h5 style="margin-top: .7rem;">Totals : <span id="total"></span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" id="checkoutBtn" class="btn btn-success mt-3">Request Pizza</button>
+                </form>
                 </div>
-    </section>
-      <!-- Site footer -->
-      <section class="footer">
-        <div class="days">
-        <h3>Our Commitment</h3>
-        <p>We are committed to a wonderful customer experience <br/> and observing high hygiene standards. Contact our <br/> customer support team incase of any concerns and we will <br/> revert ASAP. Have fun with mates!</p>
-        
-        </div>
-          <div class="contacts">
-            <h3>Weekdays</h3>
-            <p>6AM-10PM</p>
-            <h3>Weekends</h3>
-            <p>8AM-9PM</p>
-          </div>
-          <div class="socials">
-            <h1>For Queries</h1>
-            <p>CALL: (254) 724 480 092</p>
-            <p>Email: feedback@pizamate.com</p>
-          </div>
+
+            </div>
         </section>
-    
+        <!-- Site footer -->
+        <section class="footer">
+            <div class="days">
+                <h3>Our Commitment</h3>
+                <p>We are committed to a wonderful customer experience <br/> and observing high hygiene standards. Contact our <br/> customer support team incase of any concerns and we will <br/> revert ASAP. Have fun with mates!</p>
+
+            </div>
+            <div class="contacts">
+                <h3>Weekdays</h3>
+                <p>6AM-10PM</p>
+                <h3>Weekends</h3>
+                <p>8AM-9PM</p>
+            </div>
+            <div class="socials">
+                <h1>For Queries</h1>
+                <p>CALL: (254) 724 480 092</p>
+                <p>Email: feedback@pizamate.com</p>
+            </div>
+        </section>
+        <script src="index.js"></script>
 </body>
+
 </html>
